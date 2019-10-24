@@ -1,59 +1,62 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-  <head>
-    <meta charset ="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>
-      Manna from Hannah
-    </title>
-  </head>
+<head>
+<meta charset ="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="styles2.css">
+<title> Locally made, Globally saved </title>
+</head>
 <body>
 
-<main class="main">
-	<nav class='section menu'>
-	<ul class="nav-bar">
-	<li> <a href=#> Home </a> </li>
-	<li> <a href=#> Menu </a> </li>
-	<li> <a href=#> Contact </a> </li>
+<!-- Static menu with clickable drop down functionality -->
+
+<nav class="navBar">
+<ul class="mainList">
+	<li> <a href="#home">Manna from Hannah</a> 
+		<ul class="hiddenLinks" id="hiddenLinks">
+			<li> Menu </li>
+			<li> My story </li>
+			<li> Contact </li>
+		</ul>
+
+	</li>
 	</ul>
-	</nav>
 
-	<header class='section header'>
-		<img class="images" src='images/muffins.jpg'/>
-	</header>
-
-	<div class='section content'>
-		<h3> A little about me </h3>
-		<img src='images/content.svg'/>
-	</div>
-
-	<div class='section sign-up'>
-		<button class="orderButton"> Place an Order </button>
-	</div>
-
-	<section class='section feature-1'>
-		<h3> Cookies </h3>		
-		<img src='images/feature.svg'/>
-	</section>
-
-	<section class='section feature-2'>
-		<h3> Specialties </h3>
-		<img src='images/feature.svg'/>
-	</section>
-
-	<section class='section feature-3'>
-		<h3> Cakes </h3>
-		<img src='images/feature.svg'/>
-	</section>
+<button class="icon" id="navButton">x</button>
+</nav>
 
 
+<!-- Order now button; CTA should be different color as to stand out-->
+<section class="buttonContainer">
+<button class="orderButton" id="orderButton"> Order Now </button>
+</section>
+
+<!-- Main section containing high quality images of products offered as well as section 
+
+detailing "my story" -->
+<main>
+
+<!-- contains high quality images of products offered-->
+<section class="imageContainer">
+<img src="#" alt="highQualityImage">
+</section>
+
+<!-- contains history of company, motivation, story, etc. -->
+<section class="aboutMe">
+<h3> My Story </h3>
+<p> Some text detailing Hannah's passion for baking 
+as well as how the profits will be used. </p>
+</section>
 </main>
 
 
+<!-- contains links to FB, instagram, etc-->
+<footer class="footer">
+<p> Some links to FB, instagram, etc. </p>
+</footer>
+
+
+<script src="main.js"></script>
 </body>
 </html>
