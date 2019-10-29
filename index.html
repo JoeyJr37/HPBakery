@@ -1,62 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset ="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-<title> Locally made, Globally saved </title>
-</head>
-<body>
+  <head>
+    <meta charset ="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Static menu with clickable drop down functionality -->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>
+      Updates
+    </title>
+  </head>
+  <body>
 
-<nav class="navBar">
-<ul class="mainList">
-	<li> <a href="#home">Manna from Hannah</a> 
-		<ul class="hiddenLinks" id="hiddenLinks">
-			<li> Menu </li>
-			<li> My story </li>
-			<li> Contact </li>
-		</ul>
-
-	</li>
+    <header>
+      <nav class="nav-bar">
+	<h3>Just Desserts</h3>
+	<ul class="nonMobileSite-links">
+		<li><a href="#"> Home </a></li>
+		<li><a href="#"> Image Gallery </a></li>
+		<li><a href="#"> About Me </a></li>
+		<li><a href="#"> Ask A Question </a></li>
 	</ul>
+	<a href="#"> Order Now </a>
+	</nav>
+    </header>
+	<section class="backgroundImage"></section>
 
-<button class="icon" id="navButton">x</button>
-</nav>
+    <main id="link-container">
+<section class="page-column">
+	<section class="page-link" id="menu">
+	<a href="#"> Menu </a>
+	</section>
 
+	<section class="page-link" id="imageGallery">
+	<a href="#"> Image Gallery </a>
+	</section>
 
-<!-- Order now button; CTA should be different color as to stand out-->
-<section class="buttonContainer">
-<button class="orderButton" id="orderButton"> Order Now </button>
+	<section class="page-link" id="aboutMe">
+	<a href="#"> About Me </a>
+	</section>
+
+	<section class="page-link" id="askQuestion">
+	<a href="#"> Ask A Question </a>
+	</section>
 </section>
 
-<!-- Main section containing high quality images of products offered as well as section 
 
-detailing "my story" -->
-<main>
-
-<!-- contains high quality images of products offered-->
-<section class="imageContainer">
-<img src="#" alt="highQualityImage">
-</section>
-
-<!-- contains history of company, motivation, story, etc. -->
-<section class="aboutMe">
-<h3> My Story </h3>
-<p> Some text detailing Hannah's passion for baking 
-as well as how the profits will be used. </p>
-</section>
-</main>
-
-
-<!-- contains links to FB, instagram, etc-->
-<footer class="footer">
-<p> Some links to FB, instagram, etc. </p>
-</footer>
-
-
-<script src="main.js"></script>
-</body>
+    </main>
+    <footer class="footer">
+	Social Media Links
+	</footer>
+  </body>
 </html>
