@@ -33,7 +33,7 @@ display: none;
 .backgroundImage{
 //background-color: #fd74d6;
 height: 35vh;
-background: url(images/oreos.jpg);
+background: url(oreos.jpg);
 background-size: 100% auto;
 background-repeat: no-repeat;
 }
