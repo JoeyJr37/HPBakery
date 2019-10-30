@@ -1,0 +1,16 @@
+/* menu page styles */
+
+#link-container{
+flex-direction: column;
+align-items: center;
+}
+
+.underline {
+text-decoration: underline;
+}
+
+.menu-item-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
