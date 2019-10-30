@@ -42,7 +42,7 @@ padding: 2px 5px;
 /* cover image */
 .backgroundImage{
 height: 35vh;
-background: url(images/oreos.jpg);
+background: url(oreos.jpg);
 background-size: 100% auto;
 background-repeat: no-repeat;
 }
