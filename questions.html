@@ -7,8 +7,9 @@
 <link href="https://fonts.googleapis.com/css?family=Courgette|Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="mainstyles.css">
+	<link rel="stylesheet" type="text/css" href="formstyles.css">
     <title>
-      About Me
+      Just Desserts || Ask A Question
     </title>
   </head>
   <body>
@@ -30,8 +31,23 @@
 	<section class="backgroundImage"></section>
 
     <main id="link-container">
-	Form to submit questions
+<?=$thankYou ?>
+	<form class="form" method="post" action="questions.php">
+		Ask A Question
 
+<input type="text" placeholder="First Name" name="firstName" required>
+<input type="text" placeholder="Last Name" name="lastName" required>
+<input type="email" placeholder= "Email Address" name="email" required>
+Question Type:
+<label for="Special Request">
+<input type="radio" name="questionType" id="Special Request" value="Special Request"> Special Request
+</label>
+<label for="General Inquiry">
+<input type="radio" name="questionType" value="General Inquiry"> General Inquiry
+</label>
+<textarea rows="10" cols="30" placeholder="Enter your question here" name="question"></textarea><br>
+<button type="submit" class="submitButton"> Submit </button>
+	</form>
     </main>
 
     <footer class="footer">

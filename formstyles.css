@@ -1,0 +1,18 @@
+/* styles for questions form (potentially also for order form */
+
+* {
+line-height: 23px;
+}
+
+.form {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 10px;
+margin-bottom: 25px;
+}
+
+.submitButton {
+border-radius: 15%;
+box-shadow: -0.5px 2px 6px;
+}
