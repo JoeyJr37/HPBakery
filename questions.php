@@ -3,7 +3,7 @@
 if($_POST["submit"]) {
     $recipient="joeyjr11@gmail.com";
     $subject="New Question via JustDesserts Website";
-    $sender=$_POST["firstName" + "_" + "lastName"];
+    $sender=$_POST["firstName"];
     $senderEmail=$_POST["email"];
     $message=$_POST["question"];
 
