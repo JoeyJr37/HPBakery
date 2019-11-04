@@ -1,0 +1,25 @@
+.image-container {
+display: flex;
+border: 4px solid black;
+flex-direction: column;
+width: 40%;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.image {
+width: 100%;
+}
+
+.section-container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+width: 100%;
+}
+
+.figcaption {
+font-size: 20px;
+text-align: center;
+}
