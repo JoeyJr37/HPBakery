@@ -46,7 +46,7 @@ border-radius: 5px;
 /* cover image */
 .cover-page {
 height: 35vh;
-background: url(images/chocolateCookies.jpg);
+background: url(chocolateCookies.jpg);
 background-size: 100% auto;
 background-repeat: no-repeat;
 }
