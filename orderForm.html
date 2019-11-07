@@ -13,30 +13,27 @@
     </title>
   </head>
   <body>
-    <header>
+    <header class="cover-page">
+	<h1><a href="index.html"> Just Desserts </a></h1>
+	<h2> A Sweetery </h2>
+	<hr>
       <nav class="nav-bar">
-	<h3><a href="index.html"> Just Desserts </a></h3>
 	<ul class="nonMobileSite-links">
 		<li><a href="index.html"> Home </a></li>
 		<li><a href="menu.html"> Menu </a></li>
-		<li><a href="imageGallery.html"> Image Gallery </a></li>
-		<li><a href="aboutMe.html"> More Than Just Desserts </a></li>
-		<li><a href="questions.html"> Ask A Question </a></li>
+		<li><a href="imageGallery.html"> Gallery </a></li>
+		<li><a href="aboutMe.html"> About </a></li>
+		<li><a href="questions.html"> Contact </a></li>
 	</ul>
-	<section class="orderButton">
-	<a href="orderForm.html"> Order Now </a>
-	</section>
 	</nav>
     </header>
-	<section class="backgroundImage"></section>
 
     <main id="link-container">
 	<form class="form" method="post" action="https://formspree.io/mgewrdqp">
-		Ask A Question
-
-<input type="text" placeholder="First Name" name="firstName" required>
-<input type="text" placeholder="Last Name" name="lastName" required>
-<input type="email" placeholder= "Email Address" name="email" required>
+		Place an Order:
+<input type="text" placeholder= "First Name" name="firstName" required>
+<input type="text" placeholder= "Last Name" name="lastName" required>
+Email Address: <input type="email" placeholder= "Email Address" name="email" required>
 <label for="eventDate">
 Delivery Date requested: <input type="date" name="eventDate" id="eventDate" required>
 </label>
@@ -51,14 +48,64 @@ Special Event:
 <label for="Special Event-No">
 <input type="radio" name="specialEvent" id="specialEvent-No" value="No"> No
 </label>
-<textarea rows="10" cols="30" placeholder="Extra Information" name="question"></textarea><br>
+
+<fieldset class="orderForm">
+<h3>Product Requested</h3>
+
+<p>
+<label for="chocolatechipcookies">
+<input type="radio" name="productRequested" value="chocolatechipcookies" id="chocolatechipcookies"> Chocolate Chip Cookies
+</label>
+</p>
+
+<p>
+<label for="peanutbuttercookies">
+<input type="radio" name="productRequested" value="peanutbuttercookies" id="chocolatechipcookies"> Peanut Butter Cookies
+</label>
+</p>
+
+<p>
+<label for="snickerdoodle">
+<input type="radio" name="productRequested" value="snickerdoodle" id="snickerdoodle"> Snickerdoodle Cookies
+</label>
+</p>
+
+<p>
+<label for="oreoballs">
+<input type="radio" name="productRequested" value="oreoballs" id="oreoballs"> Oreo Balls
+</label>
+</p>
+
+<p>
+<label for="theGoodness">
+<input type="radio" name="productRequested" value="theGoodness" id="theGoodness"> The Goodness
+</label>
+</p>
+
+<p>
+<label for="cheesecakebrownies">
+<input type="radio" name="productRequested" value="cheesecakebrownies" id="cheesecakebrownies"> Cheesecake Brownies
+</label>
+</p>
+
+<p>
+<label for="specialOrder">
+<input type="radio" name="productRequested" value="specialOrder" id="specialOrder"> Other
+</label>
+(select "Other" for Seasonal options)
+</p>
+</fieldset><br>
+
+<textarea rows="10" cols="30" placeholder="Please use this area to specify the amount requested as well as any additional Information" name="extraInformation"></textarea>
+
+<br>
 <button type="submit" class="submitButton"> Submit </button>
 	</form>
 
     </main>
 
     <footer class="footer">
-	Social Media Links
+	 <a href="questions.html"> Contact Us </a>
 	</footer>
 
   </body>

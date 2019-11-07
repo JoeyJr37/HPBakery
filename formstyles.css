@@ -2,6 +2,7 @@
 
 * {
 line-height: 23px;
+color: white;
 }
 
 .form {
@@ -15,4 +16,22 @@ margin-bottom: 25px;
 .submitButton {
 border-radius: 15%;
 box-shadow: -0.5px 2px 6px;
+}
+
+.orderForm {
+display: flex;
+}
+
+.submitButton {
+color: black;
+background-color: yellow;
+}
+
+@media only screen and (min-width: 570px) {
+
+* {
+font-size: 23px;
+line-height: 32px;
+}
+
 }

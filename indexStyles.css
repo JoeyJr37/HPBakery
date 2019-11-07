@@ -1,23 +1,69 @@
-.page-link a{
+.page-link a {
 text-decoration: none;
 color: black;
-border: 3px solid red;
-background-color: pink;
+border: 2px solid black;
+background: linear-gradient(to right, rgb(255, 128, 192), rgb(255, 0, 255));
 padding: 10px;
-border-radius: 10%;
+border-radius: 5%;
 box-shadow: 1px 2px 1px;
 width: 100%;
 }
 
-.page-column{
+.page-column {
 display: flex;
 flex-direction: column;
-align-items: stretch;
 width: 60%;
 }
 
-.page-link{
+.page-link {
 display: flex;
-margin: 20px 0px;
+margin: 15px 0px;
 text-align: center;
+}
+
+/* order button styles */
+.orderButton a {
+text-decoration: none;
+color: black;
+border: 2px solid black;
+background: linear-gradient(to right, rgb(255, 255, 0), rgb(255, 255, 128));
+padding: 10px;
+border-radius: 5%;
+box-shadow: 1px 2px 1px;
+width: 100%;
+}
+
+.orderButton {
+display: flex;
+margin: 15px 0px;
+text-align: center;
+}
+
+.desktop-intro {
+display: none;
+}
+
+@media only screen and (min-width: 570px) {
+
+#link-container {
+background-color: white;
+}
+
+.page-column {
+width: 100%;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+#askQuestion, #menu, #imageGallery {
+display: none;
+}
+
+.desktop-intro {
+display: flex;
+color: black;
+margin: 30px;
+font-size: 25px;
+line-height: 31px;
 }
