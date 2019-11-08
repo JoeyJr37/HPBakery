@@ -35,9 +35,6 @@ display: none;
 display: flex;
 justify-content: space-between;
 padding: 10px;
-position: fixed;
-/* background-color: #f9f9e4;*/
-/* background-color: #4b4b4b; */
 width: 97%;
 margin: 5px;
 border-radius: 5px;
@@ -46,7 +43,7 @@ border-radius: 5px;
 /* cover image */
 .cover-page {
 height: 35vh;
-background: url(chocolateCookies.jpg);
+background: url(chocolateCookies.webp);
 background-size: 100% auto;
 background-repeat: no-repeat;
 }
@@ -56,7 +53,8 @@ background-repeat: no-repeat;
 display: flex;
 /* background-color: #f9f9e4; */
 /* background-color: #4b4b4b;*/
-background-color: #4b4b4bed;
+/* background-color: #4b4b4bed; */
+background-color: #F7EFF3;
 justify-content: center;
 }
 
@@ -93,7 +91,11 @@ hr {
 visibility: hidden;
 }
 
-@media only screen and (min-width: 570px) {
+@media only screen and (min-width: 570px) and (max-width: 1030px) {
+
+.cover-page {
+height: 50vh;
+}
 
 .orderButton a {
 font-size: 23px;
@@ -131,5 +133,53 @@ color: #dff90b;
 .nonMobileSite-links:hover {
 cursor: pointer;
 }
-
 }
+
+@media only screen and (min-width: 1030px) {
+
+.cover-page {
+height: 75vh;
+}
+
+.orderButton a {
+font-size: 23px;
+}
+
+.nonMobileSite-links {
+display: flex;
+}
+
+hr {
+visibility: visible;
+}
+
+.nav-bar {
+display: flex;
+padding: 0px;
+margin: 0px;
+width: 100%;
+}
+
+.nonMobileSite-links {
+width: 100%;
+justify-content: space-around;
+margin: 0px;
+font-size: 25px;
+font-weight: bold;
+padding: 10px;
+}
+
+.nonMobileSite-links a {
+text-decoration: none;
+color: #dff90b;
+}
+
+.nonMobileSite-links:hover {
+cursor: pointer;
+}
+}
+}
+
+
+
+

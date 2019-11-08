@@ -43,10 +43,19 @@ text-align: center;
 display: none;
 }
 
+.image-container {
+display: none;
+}
+
 @media only screen and (min-width: 570px) {
 
 #link-container {
 background-color: white;
+}
+
+.orderButton {
+width: 100%;
+margin: 0px;
 }
 
 .page-column {
@@ -56,14 +65,14 @@ flex-wrap: wrap;
 justify-content: space-around;
 }
 
-#askQuestion, #menu, #imageGallery {
+#askQuestion, #menu, #imageGallery, #aboutMe {
 display: none;
 }
 
-.desktop-intro {
+/* .desktop-intro {
 display: flex;
 color: black;
 margin: 30px;
 font-size: 25px;
 line-height: 31px;
-}
+} */

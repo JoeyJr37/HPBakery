@@ -6,13 +6,13 @@ flex-direction: column;
 width: 80%;
 margin-top: 20px;
 margin-bottom: 20px;
-color: white;
+color: #3A3D3F;
 line-height: 23px;
 }
 
 .title {
 font-size: 25px;
-color: #e1e276;
+color: #3A3D3F;
 }
 
 @media only screen and (min-width: 570px) {

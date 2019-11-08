@@ -2,7 +2,7 @@
 
 * {
 line-height: 23px;
-color: white;
+color: #3A3D3F;
 }
 
 #link-container {
@@ -12,7 +12,7 @@ align-items: center;
 
 .underline {
 text-decoration: underline;
-color: #e1e276;
+color: #3A3D3F;
 }
 
 .menu-item-container {
