@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css?family=Courgette|Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="mainstyles.css">
-<link rel="stylesheet" type="text/css" href="formstyles.css">
+<link rel="stylesheet" type="text/css" href="orderFormstyles.css">
     <title>
       Just Desserts || Order Form
     </title>
@@ -30,78 +30,87 @@
     </header>
 
     <main id="link-container">
-	<form class="form" method="post" action="https://formspree.io/mgewrdqp">
-		Place an Order:
-<input type="text" placeholder= "First Name" name="firstName" required>
-<input type="text" placeholder= "Last Name" name="lastName" required>
-Email Address: <input type="email" placeholder= "Email Address" name="email" required>
-<label for="eventDate">
-Delivery Date requested: <input type="date" name="eventDate" id="eventDate" required>
+
+<h3> Place an Order </h3>
+
+<section class="form-container">
+<form class="form" method="post" action="https://formspree.io/mgewrdqp">
+
+<p>
+<label for="firstName">
+<input type="text" placeholder="First Name" id="firstName" name="First Name" required>
 </label>
+
+<label for="lastName">
+<input type="text" placeholder="Last Name" id="lastName" name="Last Name" required>
+</label>
+</p>
+
+<p>
+<label for="email">
+Email: <input type="email" placeholder="Email Address" id="email" name="Email" required>
+</label>
+</p>
+
+<p>
+<label for="deliveryDate">
+Delivery Date: <input type="date" id="deliveryDate" name="Delivery Date" required>
+</label>
+</p>
+
+<p>
 <label for="deliveryAddress">
-Delivery address: <input type="address" name="deliveryAddress" id="deliveryAddress" required>
+Delivery Address: <input type="text" id="deliveryAddress" name="Delivery Address" required>
 </label>
+</p>
 
+<p>
 Special Event:
-<label for="Special Event-Yes">
-<input type="radio" name="specialEvent" id="specialEvent-Yes" value="Yes"> Yes
-</label>
-<label for="Special Event-No">
-<input type="radio" name="specialEvent" id="specialEvent-No" value="No"> No
-</label>
-
-<fieldset class="orderForm">
-<h3>Product Requested</h3>
-
-<p>
-<label for="chocolatechipcookies">
-<input type="radio" name="productRequested" value="chocolatechipcookies" id="chocolatechipcookies"> Chocolate Chip Cookies
-</label>
-</p>
-
-<p>
-<label for="peanutbuttercookies">
-<input type="radio" name="productRequested" value="peanutbuttercookies" id="chocolatechipcookies"> Peanut Butter Cookies
-</label>
-</p>
-
-<p>
-<label for="snickerdoodle">
-<input type="radio" name="productRequested" value="snickerdoodle" id="snickerdoodle"> Snickerdoodle Cookies
-</label>
-</p>
-
-<p>
-<label for="oreoballs">
-<input type="radio" name="productRequested" value="oreoballs" id="oreoballs"> Oreo Balls
-</label>
-</p>
-
-<p>
-<label for="theGoodness">
-<input type="radio" name="productRequested" value="theGoodness" id="theGoodness"> The Goodness
-</label>
-</p>
-
-<p>
-<label for="cheesecakebrownies">
-<input type="radio" name="productRequested" value="cheesecakebrownies" id="cheesecakebrownies"> Cheesecake Brownies
-</label>
-</p>
-
-<p>
-<label for="specialOrder">
-<input type="radio" name="productRequested" value="specialOrder" id="specialOrder"> Other
-</label>
-(select "Other" for Seasonal options)
-</p>
-</fieldset><br>
-
-<textarea rows="10" cols="30" placeholder="Please use this area to specify the amount requested as well as any additional Information" name="extraInformation"></textarea>
-
 <br>
-<button type="submit" class="submitButton"> Submit </button>
-	</form>
+<label for="specialEvent-yes">
+<input type="radio" id="specialEvent-yes" name="Special Event" value="specialEvent-Yes"> Yes
+</label>
+
+<label for="specialEvent-no">
+<input type="radio" id="specialEvent-no" name="Special Event" value="specialEvent-No"> No
+</label>
+</p>
+
+<p>
+Product Requested:
+<select name="product">
+<option value= "" disabled selected> Select a Product </option>
+<option value="chocolateChipCookies"> Chocolate Chip Cookies</option>
+<option value="peanutButterCookies"> Peanut Butter Cookies</option>
+<option value="snickerdoodleCookies"> Snickerdoodle Cookies</option>
+<option value="oreoballs"> Oreo Balls</option>
+<option value="theGoodness"> The Goodness</option>
+<option value="cheesecakeBrownies"> Cheesecake Brownies </option>
+<option value="other"> Other</option>
+</select>
+</p>
+
+<p>
+Amount Requested:
+<select name="amount">
+<option value= "" disabled selected> Select amount </option>
+<option value="dozen-1"> 1 dozen </option>
+<option value="dozen-2"> 2 dozen </option>
+<option value="dozen-3"> 3 dozen </option>
+<option value="dozen-4"> 4 dozen </option>
+<option value="dozen-5"> 5 dozen </option>
+<option value="dozen-6"> 6 dozen </option>
+<option value="pan"> 1 pan </option>
+</select>
+</p>
+
+<p>
+<textarea placeholder="If other please specify here" cols="15" rows="5"></textarea>
+</p>
+
+<button type="submit" class="submitButton">Place Order</button>
+
+</form>
 
     </main>
 
