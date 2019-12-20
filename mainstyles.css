@@ -43,7 +43,7 @@ border-radius: 5px;
 /* cover image */
 .cover-page {
 height: 35vh;
-background: url(chocolateCookies.webp);
+background: url(https://res.cloudinary.com/hannahj/image/upload/v1576307224/image000000_zaccck.jpg);
 background-size: 100% auto;
 background-repeat: no-repeat;
 }
@@ -179,7 +179,4 @@ cursor: pointer;
 }
 }
 }
-
-
-
 
