@@ -1,9 +1,10 @@
 .image-container {
 display: flex;
 flex-direction: column;
-width: 50%;
 margin-top: 10px;
 margin-bottom: 10px;
+height: 12em;
+overflow: hidden;
 }
 
 .image {
@@ -45,6 +46,13 @@ font-size: 50px;
 
 .figcaption {
 font-size: 30px;
+}
+
+.image-container {
+  
+    width: 40%;
+    height: 20em;
+    overflow: hidden;
 }
 
 }
