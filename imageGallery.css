@@ -3,7 +3,6 @@ display: flex;
 flex-direction: column;
 margin-top: 10px;
 margin-bottom: 10px;
-height: 12em;
 overflow: hidden;
 }
 

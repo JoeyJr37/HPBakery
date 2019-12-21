@@ -39,12 +39,14 @@ margin: 15px 0px;
 text-align: center;
 }
 
-.oreo-image-container {
+.image-container {
 	display: flex;
-	width: 100%;
+	width: 40%;
+	flex-direction: column;
+	margin: 2px;
 }
 
-.oreo-image {
+.image {
 	width: 100%;
 
 }
