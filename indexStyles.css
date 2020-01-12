@@ -31,6 +31,7 @@
 	color: #423b3b;
 	padding: 10px 5px 15px 5px;
 	font-size: 1.45rem;
+	line-height: 1.65rem;
 	text-align: center;
 }
 .about-section-text {
@@ -67,10 +68,12 @@
 .image-container {
 	display: flex;
 	justify-content: center;
+	align-items: flex-start;
 	width: 80%;
 }
 .lower-image-container {
 	display: flex;
+	align-items: flex-start;
 	width: 80%;
 }
 .lower-image {

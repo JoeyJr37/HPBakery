@@ -50,6 +50,7 @@
 }
 .image-container {
     display: flex;
+    align-items: flex-start;
     overflow: hidden;
 }
 .image {
