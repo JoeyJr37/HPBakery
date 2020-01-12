@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Made to order Desserts and sweets: menu">
 
-<link href="https://fonts.googleapis.com/css?family=Courgette|Permanent+Marker&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="reset.css">
+<link href="https://fonts.googleapis.com/css?family=Niconne&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="mainstyles.css">
 <link rel="stylesheet" type="text/css" href="menuStyles.css">
     <title>
@@ -15,58 +15,219 @@
   </head>
   <body>
     <header class="cover-page">
-	<h1><a href="index.html"> Just Desserts </a></h1>
-	<h2> A Sweetery </h2>
-	<hr>
-      <nav class="nav-bar">
-	<ul class="nonMobileSite-links">
-		<li><a href="index.html"> Home </a></li>
-		<li><a href="menu.html"> Menu </a></li>
-		<li><a href="imageGallery.html"> Gallery </a></li>
-		<li><a href="aboutMe.html"> About </a></li>
-		<li><a href="questions.html"> Contact </a></li>
-	</ul>
-	</nav>
-    </header>
+		<nav class="nav-bar">
+			<ul class="nonMobileSite-links">
+			<li><a href="index.html"> Home </a></li>
+			<li><a href="menu.html"> Menu </a></li>
+			<li><a href="aboutMe.html"> About </a></li>
+			<li class="order-now-link"><a href="orderForm.html"> ORDER NOW </a></li>
+			</ul>
+		</nav>
+		<div class="mobile-container">
+			<!-- Top Navigation Menu -->
+			<div class="topnav">
+			  <div id="myLinks">
+				<a href="orderForm.html">Order Now</a>
+				<a href="index.html">Home</a>
+				<a href="menu.html">Menu</a>
+				<a href="aboutMe.html">About</a>
+				<a href="questions.html">Contact</a>
+			  </div>
+			  <span class="icon" onclick="myFunction()">
+				<span></span>
+				<span></span>
+				<span></span>
+			  </span>
+			</div>
+			<!-- End smartphone / tablet look -->
+			</div>
+	  <div class="title-box">
+	  <h1 class="title"> A wide selection </h1>
+	  <p class="sub-text">High quality ingredients alongside attention to detail in presentation <br>
+		equals a great experience every time</p>
+	  </div>
+	  </header>
 
-    <main id="link-container">
-	<h3 class="underline"> Menu </h3>
-	<br>
-      <section class="menu-item-container">
-	<h4 class="underline"> Specialties </h4>
-	<ul class="flex-container">
-	<li>Oreo Balls</li>
-	<li>The Goodness</li>
-	<li>Cheesecake Brownies</li>
-	</ul>
-      </section>
-<br>
-      <section class="menu-item-container">
-	<h4 class="underline"> Classics </h4>
-	<ul>
-	<li>Chocolate chip cookies</li>
-	<li>Peanut Butter cookies </li>
-	<li>Snickerdoodle cookies</li>
-	</ul>
-	 </section>
-	<br>
-      <section class="menu-item-container">
-	<h4 class="underline"> Seasonal </h4>
-	<ul class="menu-item-container">
-	<li>Mint Oreo Balls</li>
-	<li>Pumpkin Chocolate Chip Muffins</li>
-	</ul>
-	 </section>
-<br>
-
-	<section class="orderButton" id="orderButton">
-	<a href="orderForm.html"> Order Now </a>
+    <main class="main-box">
+		<span class="small-intro-text">Our menu </span>
+		<span class="see-menu-header"> What we offer </span>
+		<span class="see-menu-text"> We update our menu for every season so drop by our page regularly to see our specials!</span>
+	</main>
+	<section class="menu-item-boxes">
+		<section class="sub-menu-item-boxes">
+			<article class="menu-item">
+				<span class="menu-item-title">Oreo Truffles</span>
+				<div id="modal-1" class="modal">
+					<div class="menu-item-description modal-content">
+				<span class="close">X</span>
+				<figure class="image-container">
+					<img class="image" src="https://res.cloudinary.com/hannahj/image/upload/v1576307862/IMG_3963_2_tmuk7v.jpg" alt="Oreo truffles"-1>
+				</figure>
+				<p class="description-text">A fan favorite! Cookies and cream cheese combined to make a melt in your mouth
+				treat covered with an outer layer of hardened chocolate.</p>
+				</div>
+			</div>
+			<figure class="image-container">
+				<img class="image" src="https://res.cloudinary.com/hannahj/image/upload/v1576307862/IMG_3963_2_tmuk7v.jpg" alt="Oreo truffles">
+			</figure>
+		</article>
+		<article class="menu-item">
+			<span class="menu-item-title">Cake Balls</span> 
+			<div id="modal-2" class="modal">
+			<div class="menu-item-description modal-content">
+				<span class="close">X</span>
+				<figure class="image-container">
+				<img class="image" src="https://res.cloudinary.com/hannahj/image/upload/v1576306625/IMG_3975_nkxrpq.jpg" alt="Christmas-style
+				cake balls">
+				</figure>
+				<p class="description-text">Popular with kids and adults alike! Everyone enjoys these sweet treats that are soft on the inside and
+				candy coated on the outside. Perfect for any occassion!</p>
+				</div>
+			</div>
+			<figure class="image-container">
+				<img class="image" src="https://res.cloudinary.com/hannahj/image/upload/v1576306625/IMG_3975_nkxrpq.jpg" alt="Christmas-style
+				cake balls">
+			</figure>
+		</article>
+		<article class="menu-item">
+			<span class="menu-item-title">The Goodness</span> 
+			<div id="modal-3" class="modal">
+			<div class="menu-item-description modal-content">
+				<span class="close">X</span>
+				<figure class="image-container">
+				<img class="image" src="https://res.cloudinary.com/hannahj/image/upload/v1576306736/IMG_3600_3_hrpdnx.jpg" alt="The Goodness">
+				</figure>
+				<p class="description-text">A creamy mix of whipped cream, peanut butter and crushed oreos. If you want to the hit
+				of your next party, bring this delicious and unique dish!.</p>
+				</div>
+			</div>
+			<figure class="image-container">
+				<img class="image" src="https://res.cloudinary.com/hannahj/image/upload/v1576306736/IMG_3600_3_hrpdnx.jpg" alt="The Goodness">
+			</figure>
+		</article>
+		<article class="menu-item">
+			<span class="menu-item-title">Chocolate Cookies Chips</span> 
+			<div id="modal-4" class="modal">
+			<div class="menu-item-description modal-content">
+				<span class="close">X</span>
+				<figure class="image-container">
+				<img class="image" src="https://res.cloudinary.com/hannahj/image/upload/v1576307224/image000000_zaccck.jpg" alt="Chocolate Chip
+				cookies">
+				</figure>
+				<p class="description-text">The classic of all classics! Two dozen of these will change your life for the better!
+				If you're a fan of chocolate but you're not sure what to get, this is a great starting point.</p>
+				</div>
+			</div>
+			<figure class="image-container">
+				<img class="image" src="https://res.cloudinary.com/hannahj/image/upload/v1576307224/image000000_zaccck.jpg" alt="Chocolate Chip
+				cookies">
+			</figure>
+		</article>
+		<article class="menu-item">
+			<span class="menu-item-title">Peanut Butter Cookies</span> 
+			<div id="modal-5" class="modal">
+			<div class="menu-item-description modal-content">
+				<span class="close">X</span>
+				<figure class="image-container">
+				<img class="image rotate-image" src="https://res.cloudinary.com/hannahj/image/upload/v1576307047/IMG_3666_b2atwq.jpg"
+				 alt="Peanut Butter cookies">
+				</figure>
+				<p class="description-text">Got friends coming in town and want to treat them to something special? Look no further
+				than these peanut butter cookies. Buttery, soft and with that addictive peanut butter taste these are the cookies you've been
+				waiting for!</p>
+				</div>
+			</div>
+			<figure class="image-container">
+				<img class="image rotate-image" src="https://res.cloudinary.com/hannahj/image/upload/v1576307047/IMG_3666_b2atwq.jpg"
+				 alt="Peanut Butter cookies">
+			</figure>
+		</article>
+		<article class="menu-item">
+			<span class="menu-item-title">Snickerdoodle Cookies</span> 
+			<div id="modal-6" class="modal">
+			<div class="menu-item-description modal-content">
+				<span class="close">X</span>
+				<figure class="image-container">
+				<img class="image" src="https://res.cloudinary.com/hannahj/image/upload/v1576306701/IMG_3781_ypkpog.jpg" alt="Snickerdoodle
+				cookies">
+				</figure>
+				<p class="description-text">A dash of cinnamon with a soft and chewy center, these will be the highlight of your next
+				get together with your friends. They will definitely want to know where you got them and 
+				you'll be an instant favorite!</p>
+				</div>
+			</div>
+			<figure class="image-container">
+				<img class="image" src="https://res.cloudinary.com/hannahj/image/upload/v1576306701/IMG_3781_ypkpog.jpg" alt="Snickerdoodle
+				cookies">
+			</figure>
+		</article>
+		<article class="menu-item">
+			<span class="menu-item-title">Chocolate Pie</span> 
+			<div id="modal-7" class="modal">
+			<div class="menu-item-description modal-content">
+				<span class="close">X</span>
+				<figure class="image-container">
+				<img class="image rotate-image" src="https://res.cloudinary.com/hannahj/image/upload/v1576306990/IMG_3832_t5ndnk.jpg" alt="Chocolate Pie">
+				</figure>
+				<p class="description-text">Looking for a chilled dessert that will scratch that chocolate itch? This chocolate pie is simple
+				and yet a complex mix of quality flavors and exquisite presentation. </p>
+				</div>
+			</div>
+			<figure class="image-container">
+		<img class="image rotate-image" src="https://res.cloudinary.com/hannahj/image/upload/v1576306990/IMG_3832_t5ndnk.jpg" alt="Chocolate Pie">
+			</figure>
+		</article>
+		<article class="menu-item">
+			<span class="menu-item-title">Cheesecake Brownies</span> 
+			<div id="modal-8" class="modal">
+			<div class="menu-item-description modal-content">
+				<span class="close">X</span>
+				<figure class="image-container">
+			<img class="image" src="https://res.cloudinary.com/hannahj/image/upload/v1576307549/IMG_3790_avonru.jpg" alt="Cheesecake Brownies">
+				</figure>
+				<p class="description-text">An up and coming item that is sure to become a classic! An amazing mix of cream cheese and brownies,
+				this is something you'll order two after you've tried it!</p>
+				</div>
+			</div>
+			<figure class="image-container">
+			<img class="image" src="https://res.cloudinary.com/hannahj/image/upload/v1576307549/IMG_3790_avonru.jpg" alt="Cheesecake Brownies">
+			</figure>
+		</article>
+		<article class="menu-item">
+			<span class="menu-item-title oreo-modal">Chocolate covered...</span> 
+			<div id="modal-9" class="modal">
+			<div class="menu-item-description modal-content">
+				<span class="close">X</span>
+				<figure class="image-container">
+				<img class="image" src="https://res.cloudinary.com/hannahj/image/upload/v1576306990/IMG_3805_aewisa.jpg" alt="Chocolate covered pretzels">
+				</figure>
+				<p class="description-text">If you haven't noticed, we love our chocolate around here! So much so that we dip everything in it!
+				Pretzels, strawberries, oreos and more! </p>
+				</div>
+			</div>
+			<figure class="image-container">
+		<img class="image" src="https://res.cloudinary.com/hannahj/image/upload/v1576306990/IMG_3805_aewisa.jpg" alt="Chocolate covered pretzels">
+			</figure>
+		</article>
+		</section>
 	</section>
-
-    </main>
 
     <footer class="footer">
 	 <a href="questions.html"> Contact Us </a>
 	</footer>
+	<script>
+		function myFunction() {
+		  const x = document.getElementById("myLinks");
+		  const hero = document.querySelector(".title-box");
+		  if (x.style.display === "flex") {
+			x.style.display = "none";
+			hero.classList.remove("cover-all");
+		  } else {
+			x.style.display = "flex";
+			hero.classList.add("cover-all");
+		  }
+		}
+		</script>
+		<script defer src="modals.js"></script>
   </body>
 </html>

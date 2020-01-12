@@ -5,68 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Made to order Desserts and sweets: home page">
 
-<link href="https://fonts.googleapis.com/css?family=Courgette|Permanent+Marker&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Niconne&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="mainstyles.css">
-    <link rel="stylesheet" type="text/css" href="indexStyles.css">
+	<link rel="stylesheet" type="text/css" href="indexStyles.css">
     <title>
       Just Desserts || Home
     </title>
   </head>
   <body>
     <header class="cover-page">
-	<h1><a href="index.html"> Just Desserts </a></h1>
-	<h2> A Sweetery </h2>
-	<hr>
       <nav class="nav-bar">
-	<ul class="nonMobileSite-links">
+		<ul class="nonMobileSite-links">
 		<li><a href="index.html"> Home </a></li>
 		<li><a href="menu.html"> Menu </a></li>
-		<li><a href="imageGallery.html"> Gallery </a></li>
 		<li><a href="aboutMe.html"> About </a></li>
 		<li><a href="questions.html"> Contact </a></li>
-	</ul>
+		</ul>
 	</nav>
+	<div class="mobile-container">
+		<!-- Top Navigation Menu -->
+		<div class="topnav">
+		  <div id="myLinks">
+			<a href="orderForm.html">Order Now</a>
+			<a href="index.html">Home</a>
+			<a href="menu.html">Menu</a>
+			<a href="aboutMe.html">About</a>
+			<a href="questions.html">Contact</a>
+		  </div>
+		  <span class="icon" onclick="myFunction()">
+			<span></span>
+			<span></span>
+			<span></span>
+		  </span>
+		</div>
+		<!-- End smartphone / tablet look -->
+		</div>
+	<div class="title-box">
+	<h1 class="title"> Just Desserts </h1>
+	<h2> A Sweetery </h2>
+	<p class="sub-text">Made-to-order desserts that hit the spot everytime!</p>
+	<footer class="button-container">
+	<a class="button order-button" href="orderForm.html">ORDER NOW</a>
+	</footer>
+	</div>
     </header>
-    <main id="link-container">
-	<section class="page-column">
-
-	<section class="orderButton" id="orderButton">
-	<a href="orderForm.html"> Order Now </a>
+    <main>
+	<section class="about-section">
+		<span class="small-intro-text"> Who we are</span>
+		<header class="about-section-header">
+			We serve truly tasty desserts you'll find hard to resist.
+		</header>
+		<p class="about-section-text">
+		Just Desserts - a Sweetery, is a made to order dessert company 
+		catering to the Houston area. We desire to make a global impact through our local snacks.
+		</p>
+		<footer class="button-container">
+			<a class="button learn-more-button" href="aboutMe.html">LEARN MORE</a>
+			</footer>
 	</section>
-	
-	<figure class="image-container">
-	<img class="image" src ="https://res.cloudinary.com/hannahj/image/upload/v1576250759/IMG953766_dk2b9h.jpg" alt="chocolate-covered oreos">
+	<section class="see-menu-section">
+		<article class="see-menu-article">
+			<span class="small-intro-text"> What we serve</span>
+			<header class="see-menu-header">
+				Choose from a wide variety of options
+			</header>
+			<p class="see-menu-text">
+				A perfect blend of the classics you love and unique treats for that special occassion. For every season, we've got exactly what 
+				you're looking for!
+			</p>
+			<footer class="button-container">
+				<a class="button see-menu-button" href="menu.html">VIEW MENU</a>
+			</footer>
+	</article>
+	<figure class="lower-image-container">
+		<img class="lower-image" src="https://res.cloudinary.com/hannahj/image/upload/v1576250759/IMG953766_dk2b9h.jpg" alt="Chocolate covered oreos">
 	</figure>
-
-	<section class="page-link" id="menu">
-	<a href="menu.html"> Menu </a>
-	</section>
-
-	<figure class="image-container">
-	<img class="image" src ="https://res.cloudinary.com/hannahj/image/upload/v1576307855/IMG_3959_difgug.jpg" alt="Christmas cupcakes">
-	</figure>
-
-	<section class="page-link" id="imageGallery">
-	<a href="imageGallery.html"> Image Gallery </a>
-	</section>
-
-	<figure class="image-container">
-	<img class="image" src ="https://res.cloudinary.com/hannahj/image/upload/v1576307862/IMG_3963_2_tmuk7v.jpg" alt="Oreo balls">
-	</figure>
-
-	<section class="page-link" id="aboutMe">
-	<a href="aboutMe.html"> More Than Just Desserts </a>
-	</section>
-
-	<figure class="image-container">
-	<img class="image" src ="https://res.cloudinary.com/hannahj/image/upload/v1576306990/IMG_3805_aewisa.jpg" alt="chocolate covered pretzels">
-	</figure>
-
-	</section>
+		</section>
+			<section class="section-cover">
+				<article class="lower-article">
+				<span class="article-header">Why wait?</span>
+				<span class="article-text">You could be enjoying these decadent desserts right now!</span>
+			</article>
+				<footer class="button-container">
+					<a class="button lower-article-button" href="orderForm.html">ORDER ONLINE</a>
+				</footer>
+			</section>
     </main>
     <footer class="footer">
-	 <a href="questions.html"> Contact Us </a>
+		<ul class="footer-links">
+	 <li><a href="questions.html"> Contact Us </a></li>
+	 <li><a href="#">Order Now </a></li>
+	 <li><a href="#">About Just Desserts</a></li>
+	 <li><a href="#">Privacy Policy </a></li>
+	</ul>
 	</footer>
+	<script>
+		function myFunction() {
+		  const x = document.getElementById("myLinks");
+		  const hero = document.querySelector(".title-box");
+		  if (x.style.display === "flex") {
+			x.style.display = "none";
+			hero.classList.remove("cover-all");
+		  } else {
+			x.style.display = "flex";
+			hero.classList.add("cover-all");
+		  }
+		}
+		</script>
   </body>
 </html>

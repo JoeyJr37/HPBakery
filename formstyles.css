@@ -1,9 +1,12 @@
-/* styles for questions form (potentially also for order form */
-
-* {
-line-height: 23px;
-color: #3A3D3F;
-}
+.cover-page {
+    height: 50vh;
+    background: linear-gradient(rgba(255,255,255,0.7),
+                             rgba(255,255,255,0.7)), 
+                             url("https://res.cloudinary.com/hannahj/image/upload/v1576306869/IMG_3632_lhcbrp.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
 
 .form {
 display: flex;
@@ -11,6 +14,11 @@ flex-direction: column;
 align-items: center;
 margin-top: 10px;
 margin-bottom: 25px;
+font-size: 1.75em;
+line-height: 1.5em;
+}
+input, textarea {
+    font-size: 1em;
 }
 
 .submitButton {
@@ -23,15 +31,19 @@ display: flex;
 }
 
 .submitButton {
-color: black;
-background-color: yellow;
+color: white;
+background-color: purple;
+padding: 5px 10px;
+font-size: 1.25em;
 }
-
-@media only screen and (min-width: 570px) {
-
-* {
-font-size: 23px;
-line-height: 32px;
+.submitButton:hover {
+    cursor: pointer;
+	opacity: 0.80;
+	box-shadow: 1px 1px 1px 2.5px;
 }
-
+.order-now-link {
+    background-color: rgba(216, 192, 216, 0.5);
+}
+.order-now-link:hover {
+    background-color: rgba(216, 192, 216, 1.0);
 }

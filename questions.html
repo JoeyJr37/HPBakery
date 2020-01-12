@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Made to order Desserts and sweets: contact form">
 
-<link href="https://fonts.googleapis.com/css?family=Courgette|Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Niconne&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="mainstyles.css">
 	<link rel="stylesheet" type="text/css" href="formstyles.css">
@@ -15,19 +15,37 @@
   </head>
   <body>
     <header class="cover-page">
-	<h1><a href="index.html"> Just Desserts </a></h1>
-	<h2> A Sweetery </h2>
-	<hr>
       <nav class="nav-bar">
-	<ul class="nonMobileSite-links">
-		<li><a href="index.html"> Home </a></li>
-		<li><a href="menu.html"> Menu </a></li>
-		<li><a href="imageGallery.html"> Gallery </a></li>
-		<li><a href="aboutMe.html"> About </a></li>
-		<li><a href="questions.html"> Contact </a></li>
-	</ul>
-	</nav>
-    </header>
+      <ul class="nonMobileSite-links">
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="menu.html"> Menu </a></li>
+        <li><a href="aboutMe.html"> About </a></li>
+        <li class="order-now-link"><a href="orderForm.html"> ORDER NOW </a></li>
+      </ul>
+      </nav>
+      <div class="mobile-container">
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <div id="myLinks">
+          <a href="orderForm.html">Order Now</a>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="aboutMe.html">About</a>
+          <a href="questions.html">Contact</a>
+          </div>
+          <span class="icon" onclick="myFunction()">
+          <span></span>
+          <span></span>
+          <span></span>
+          </span>
+        </div>
+        <!-- End smartphone / tablet look -->
+        </div>
+      <div class="title-box">
+      <h1> How can we help? </h1>
+      <p class="sub-text">We're available to chat. Reach out to us anytime!</p>
+      </div>
+      </header>
 
     <main id="link-container">
 
@@ -37,6 +55,7 @@
 <input type="text" placeholder="First Name" name="firstName" required>
 <input type="text" placeholder="Last Name" name="lastName" required>
 <input type="email" placeholder= "Email Address" name="email" required>
+<input type="tel" placeholder= "Phone Number" name="phoneNumber" required>
 Question Type:
 <label for="Special Request">
 <input type="radio" name="questionType" id="Special Request" value="Special Request"> Special Request
@@ -44,13 +63,25 @@ Question Type:
 <label for="General Inquiry">
 <input type="radio" name="questionType" value="General Inquiry"> General Inquiry
 </label>
-<textarea rows="10" cols="30" placeholder="Enter your question here" name="question"></textarea><br>
+<textarea rows="10" cols="15" placeholder="Enter your question here" name="question"></textarea><br>
 <button type="submit" class="submitButton"> Submit </button>
 	</form>
     </main>
 
     <footer class="footer">
 	</footer>
-
+	<script>
+		function myFunction() {
+		  const x = document.getElementById("myLinks");
+		  const hero = document.querySelector(".title-box");
+		  if (x.style.display === "flex") {
+			x.style.display = "none";
+			hero.classList.remove("cover-all");
+		  } else {
+			x.style.display = "flex";
+			hero.classList.add("cover-all");
+		  }
+		}
+		</script>
   </body>
 </html>
