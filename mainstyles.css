@@ -208,6 +208,9 @@ cursor: pointer;
 		font-size: 1.45rem;
 		font-weight: bold;
 		}
+	  .cover-page {
+	  height: 60vh;
+	  }
   }
   @media only screen and (min-width: 1280px) {
 	h1 {
@@ -227,4 +230,7 @@ cursor: pointer;
 	.see-menu-header {
 		font-size: 1.75rem;
 	}
+	 .cover-page {
+	 	 height: 60vh;
+	  }
   }
