@@ -49,8 +49,8 @@ z-index: 99;
 /* cover image */
 .cover-page {
 height: 45vh;
-background: linear-gradient(rgba(255,255,255,0.8),
-                         rgba(255,255,255,0.8)), 
+background: linear-gradient(rgba(255,255,255,0.7),
+                         rgba(255,255,255,0.7)), 
                          url("https://res.cloudinary.com/hannahj/image/upload/v1576307224/image000000_zaccck.jpg");
 background-size: 100%;
 background-repeat: no-repeat;
